@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="website.js"></script>
     <title>Website for selling newborns clothware</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("eY0PR-7uMEF1AouSH");
+        })();
+    </script>
 </head>
 
 <body>
@@ -29,6 +38,29 @@
         <h1>Purchase clothware and footware of your choice here at ClothBaby</h1>
         <h4 style="color: white;">CONTACT US via email : clothbaby@gmail.com<br>Through whatsapp or via calls using:0729104541
             <h4>
+    </section>
+    <section>
+        <h3>Here at ClothBaby we are committed to providing you with the best customer experience.
+            <br> If you have any questions,comments or concerns please do not hesitate to contact us, you can also fill the form below to contact us and enable us to know your testmonials.<br>YOU ARE WELCOME ALL!
+
+        </h3>
+    </section>
+    <section class="form">
+        <form>
+            <table>
+                <legend>Please fill the form</legend>
+                <tr> FirstName:<input type="firstname" name="firstname" id="FirstName"> LastName:
+                    <input type="lastname" name="lastname" id="LastName"> <br> Email: <input type="email" name="email" id="email"><br> Phone Number:<input type="phone number" name="phone number" id="Phone Number"><br></tr>
+
+                <tr> PLEASE LET US KNOW YOUR COMMENTS<br>ANY INQUIRES OR CONCERNS.<br>
+                    <textarea cals="800" rows="10" id="message"></textarea><br>
+                </tr>
+                <tr>
+                    <input type="button" value="SUBMIT" onclick="sendMail()"></input>
+
+                </tr>
+            </table>
+        </form>
     </section>
     <section class="footer">
         <h4>About Us</h4>
